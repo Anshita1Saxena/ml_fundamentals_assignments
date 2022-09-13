@@ -17,9 +17,10 @@ class NumpyBasics:
         return c
 
     def add_array_number(self, a, num):
-        c = np.empty(len(a))
-        for i in range(0, len(a)):
-            c[i] = a[i] + num
+        # Call function to make the number an array
+        new_arr = make_array_from_number(num)
+        # Broadcast concept
+        c = np.add(a, new_arr)
         return c
 
     def multiply_elementwise_arrays(self, a, b):
