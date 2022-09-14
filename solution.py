@@ -7,7 +7,8 @@ def make_array_from_list(some_list):
 
 
 def make_array_from_number(num):
-    num_arr = np.array(num)
+    num_a = [num]
+    num_arr = np.array(num_a)
     return num_arr
 
 
